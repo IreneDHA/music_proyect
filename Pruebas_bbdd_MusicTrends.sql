@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `Spotify` (
   `id_track` INT NOT NULL AUTO_INCREMENT,
   `nombre_artista` VARCHAR(100) NOT NULL,
   `nombre_cancion` VARCHAR(200) NULL,
-  `año_lanzamiento` DATE NULL,
+  `año_lanzamiento` DATE NULL, -- necesitamos VARCHAR(4) O YEAR
   `género_musical` VARCHAR(45) NULL,
   `tipo` VARCHAR(10) NULL,
   PRIMARY KEY(`id_track`, `nombre_artista`));
